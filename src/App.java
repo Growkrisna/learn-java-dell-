@@ -1,4 +1,4 @@
-package belajar.src;
+// package belajar.src;
 public class App {
     public static void main(String[] args) throws Exception {
         Integer iniinteger = 100;

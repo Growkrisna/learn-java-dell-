@@ -20,3 +20,4 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 Day 1 : var, array, method, install.
 Day 2 : method, parameter, return value, overloading, recursive, scope.
+DAy 3 : Array
