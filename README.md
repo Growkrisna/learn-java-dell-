@@ -22,3 +22,4 @@ Day 1 : var, array, method, install.
 Day 2 : method, parameter, return value, overloading, recursive, scope.
 Day 3 : Array
 Day 4 : OOP class, object, field, method
+Day 5 : Constructor

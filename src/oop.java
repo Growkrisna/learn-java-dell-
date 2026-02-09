@@ -1,10 +1,7 @@
 public class oop {
     public static void main(String[] args) {
-        var person1 = new Person();
-        Person person2 = new Person();
-
-        Person person3;
-        person3 = new Person();
+        var person1 = new Person("Krisna", "Jl. Jalan No. 67");
+        Person person2 = new Person("AKLAS", "JL. ASDKJ No. 89");
 
         person1.name = "Krisna";
         person1.address = "Jl. Jalan No. 67";
