@@ -6,6 +6,9 @@ public class oop {
         person1.name = "Krisna";
         person1.address = "Jl. Jalan No. 67";
 
+
+        role();
+
         System.out.println(person1.name);
         System.out.println(person1.address);
         System.out.println(person1.country);

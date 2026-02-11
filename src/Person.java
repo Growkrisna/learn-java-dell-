@@ -8,6 +8,10 @@ public class Person {
         address = paramAddress;
     }
 
+    Role(){
+        System.out.println("I am a person");
+    }
+
     Person(String paramName){
         name = paramName;   
 
