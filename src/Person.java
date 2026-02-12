@@ -13,8 +13,7 @@ public class Person {
     }
 
     Person(String paramName){
-        name = paramName;   
-
+        this(paramName, "Unknown");
     }
 
     void Hello(String paraName){
