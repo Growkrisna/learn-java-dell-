@@ -16,3 +16,7 @@ public class oop {
         person2.Hello(null);
     }
 }
+
+class viceppl extends Person {
+
+}

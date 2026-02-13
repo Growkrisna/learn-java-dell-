@@ -24,3 +24,4 @@ Day 3 : Array
 Day 4 : OOP class, object, field, method
 Day 5 : Constructor
 Day 6 : Constructor overloading
+Day 7 : Inheritance
