@@ -6,6 +6,7 @@ public class oop2 {
         var person = new persona( a, "Jawa", "Indonesia");
         student student = new student(a);
         student.study();
+        student.Hello("Yudi");
         // System.out.println(person.getName());
     }
 }
@@ -25,6 +26,10 @@ class persona {
         this.country = country;
         // System.out.println("I am a person");
     }
+
+    public void Hello(String paraName){
+        System.out.println("Hello " + paraName + ", My name is " + Name);
+    }
 }
 
 class student extends persona {
@@ -33,5 +38,9 @@ class student extends persona {
     }
     public void study(){
         System.out.println(this.getName() + " is studying");
+    }
+
+    public void Hello(String paraName){
+        System.out.println("Holla " + paraName + ", just call me " + this.getName());
     }
 }
