@@ -2,12 +2,11 @@ import java.util.jar.Attributes.Name;
 
 public class oop2 {
     public static void main(String[] args) {
-        String a = "Roselia";
-        var person = new persona( a, "Jawa", "Indonesia");
-        student student = new student(a);
-        student.study();
+        persona p = new student("Roselia");
+        student student = new student("Roselia");
+        p.study();
         student.Hello("Yudi");
-        // System.out.println(person.getName());
+        p.Hello("Wakaba");
     }
 }
 
@@ -40,6 +39,7 @@ class student extends persona {
         System.out.println(this.getName() + " is studying");
     }
 
+    @Override
     public void Hello(String paraName){
         System.out.println("Holla " + paraName + ", just call me " + this.getName());
     }
