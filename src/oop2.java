@@ -4,7 +4,7 @@ public class oop2 {
     public static void main(String[] args) {
         persona p = new student("Roselia");
         student student = new student("Roselia");
-        p.study();
+        student s = (student) p;s.study();
         student.Hello("Yudi");
         p.Hello("Wakaba");
     }

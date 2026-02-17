@@ -27,3 +27,4 @@ Day 6 : Constructor overloading
 Day 7 : Inheritance
 Day 8 : Mengulang
 Day 9 : Private field, Pewarisan
+Day 10 : Overriding n Casting
