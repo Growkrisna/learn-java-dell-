@@ -8,6 +8,7 @@ public class oop2 {
         student s = (student) p;s.study();
         student.Hello("Yudi");
         p.Hello("Wakaba");
+        
     }
 }
 
@@ -30,6 +31,7 @@ class persona {
     public void Hello(String paraName){
         System.out.println("Hello " + paraName + ", My name is " + Name);
     }
+
 }
 
 class student extends persona {
@@ -41,7 +43,7 @@ class student extends persona {
     }
 
     @Override
-    public void Hello(String paraName){
+    public  void Hello(String paraName){
         System.out.println("Holla " + paraName + ", just call me " + this.getName());
     }
 }
