@@ -1,3 +1,4 @@
+package School;
 import java.util.jar.Attributes.Name;
 
 public class oop2 {
