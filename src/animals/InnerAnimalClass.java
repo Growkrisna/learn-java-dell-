@@ -20,6 +20,7 @@ class AnimalClass {
 
 class dog extends AnimalClass {
 
+
     public dog(String name) {
         super(name, "Dog");
     }
