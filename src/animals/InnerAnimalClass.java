@@ -1,8 +1,8 @@
 package animals;
 
 class AnimalClass {
-    private String name;
-    private String species;
+    protected String name;
+    protected String species;
     
     public AnimalClass(String name, String species){
         this.name = name;
@@ -15,5 +15,17 @@ class AnimalClass {
         } else {
             System.out.println(this.name + " : makes a sound.");
         }
+    }
+}
+
+class dog extends AnimalClass {
+
+    public dog(String name) {
+        super(name, "Dog");
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println(this.name + " : barks.");
     }
 }

@@ -7,5 +7,8 @@ public class animals {
 
         AnimalClass cat = new AnimalClass("Whiskers", "Cat");
         cat.makeSound();
+
+        dog dog2 = new dog("Rex");
+        dog2.makeSound();
     }
 }
