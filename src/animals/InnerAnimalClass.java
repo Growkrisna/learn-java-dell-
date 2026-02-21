@@ -2,7 +2,7 @@ package animals;
 
 class AnimalClass {
     protected String name;
-    protected String species;
+    private String species;
     
     public AnimalClass(String name, String species){
         this.name = name;
@@ -20,7 +20,6 @@ class AnimalClass {
 
 class dog extends AnimalClass {
 
-
     public dog(String name) {
         super(name, "Dog");
     }
@@ -28,5 +27,17 @@ class dog extends AnimalClass {
     @Override
     public void makeSound() {
         System.out.println(this.name + " : barks.");
+    }
+}
+
+class cat extends AnimalClass {
+
+    public cat(String name) {
+        super(name, "Cat");
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println(this.name + " : meows.");
     }
 }
