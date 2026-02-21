@@ -1,6 +1,6 @@
 package animals;
 
-class AnimalClass {
+abstract class AnimalClass {
     protected String name;
     private String species;
     
@@ -9,13 +9,8 @@ class AnimalClass {
         this.species = species;
     }
 
-    public void makeSound(){
-        if (species.equals("Cat")) {
-            System.out.println(this.name + " : meows.");
-        } else {
-            System.out.println(this.name + " : makes a sound.");
-        }
-    }
+    public abstract void makeSound();
+ 
 }
 
 class dog extends AnimalClass {
