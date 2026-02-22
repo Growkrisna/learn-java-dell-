@@ -13,12 +13,22 @@ abstract class AnimalClass {
  
 }
 
-class dog extends AnimalClass {
+public interface moveable{
+    void move();
+
+    
+}
+
+class dog extends AnimalClass implements moveable {
 
     public dog(String name) {
         super(name, "Dog");
     }
 
+    @Override
+    public void move() {
+        System.out.println(this.name + " : run.");
+    }
     @Override
     public void makeSound() {
         System.out.println(this.name + " : barks.");
@@ -35,4 +45,10 @@ class cat extends AnimalClass {
     public void makeSound() {
         System.out.println(this.name + " : meows.");
     }
+
+    @Override
+    public void move() {
+        System.out.println(name + " walks gracefully.");
+    }
+
 }
