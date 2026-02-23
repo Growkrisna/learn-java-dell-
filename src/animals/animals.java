@@ -10,6 +10,17 @@ public class animals {
 
         for (AnimalClass animal : animals) {
             animal.makeSound();
+            if (animal instanceof moveable) {
+                ((moveable) animal).move();
+            }
+        }
+
+        moveable m = new dog("Charlie");
+        m.move();
+        
+        if(m instanceof dog){
+            dog d = (dog) m;
+            d.makeSound();  
         }
     }
 }

@@ -35,7 +35,7 @@ class dog extends AnimalClass implements moveable {
     }
 }
 
-class cat extends AnimalClass {
+class cat extends AnimalClass implements moveable {
 
     public cat(String name) {
         super(name, "Cat");
@@ -48,7 +48,7 @@ class cat extends AnimalClass {
 
     @Override
     public void move() {
-        System.out.println(name + " walks gracefully.");
+        System.out.println(this.name + " : walks gracefully.");
     }
 
 }
