@@ -29,3 +29,5 @@ Day 8 : Mengulang
 Day 9 : Private field, Pewarisan
 Day 10 : Overriding n Casting
 Day 11 : Inheritance knowledge
+Day 12 : Casting
+Day 13 : Interface
