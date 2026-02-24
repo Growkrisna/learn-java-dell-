@@ -15,11 +15,14 @@ abstract class AnimalClass {
 
 public interface moveable{
     void move();
-
-    
 }
 
-class dog extends AnimalClass implements moveable {
+interface AnimalBehavior {
+    void move();
+    void makeSound();
+}
+
+class dog extends AnimalClass implements moveable, AnimalBehavior {
 
     public dog(String name) {
         super(name, "Dog");

@@ -22,5 +22,19 @@ public class animals {
             dog d = (dog) m;
             d.makeSound();  
         }
+
+        System.out.println();
+
+        ArrayList<AnimalBehavior> a = new ArrayList<>();
+        a.add(new dog("Killsill"));
+        
+        for (AnimalBehavior animal : a) {
+            animal.makeSound();
+            animal.move();
+        }
+
+        System.out.println();
+
+        
     }
 }
