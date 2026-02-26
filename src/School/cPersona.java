@@ -9,6 +9,14 @@ class cPersona {
         return Name;
     }
 
+    public String getAddress(){
+        return Address;
+    }
+
+    public String getCountry(){
+        return country;
+    }
+
     cPersona(String Name, String Address, String country){
         this.Name = Name;
         this.Address = Address;
@@ -16,6 +24,8 @@ class cPersona {
         // System.out.println("I am a person");
     }
     
+    
+
     public void editPersona(String name, String address, String country){
         this.Name = name;
         this.Address = address;
@@ -40,6 +50,15 @@ class student extends cPersona {
     public  void Hello(String paraName){
         System.out.println("Holla " + paraName + ", just call me " + this.getName());
     }
+
+    public void editStudent(String name, String address, String country){
+        super.editPersona(name, address, country);
+    }
+
+    public String toString(){
+        return "Name : " + this.getName() + ", \nAddress : " + this.getAddress() + ", \nCountry : " + this.getCountry();
+    }
+    
 }
 
 class teacher extends cPersona {
