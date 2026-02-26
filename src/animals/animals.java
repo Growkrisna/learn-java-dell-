@@ -26,7 +26,7 @@ public class animals {
         System.out.println();
 
         ArrayList<AnimalBehavior> a = new ArrayList<>();
-        a.add(new dog("Killsill"));
+        a.add(new dog("KillKiSS"));
         
         for (AnimalBehavior animal : a) {
             animal.makeSound();
