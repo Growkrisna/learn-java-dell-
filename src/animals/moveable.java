@@ -3,26 +3,29 @@ package animals;
 abstract class AnimalClass {
     protected String name;
     private String species;
+    protected int age;
     
     public AnimalClass(String name, String species){
         this.name = name;
         this.species = species;
     }
 
+     public void sleep() {
+        System.out.println(name + " is sleeping");
+    }
+
     public abstract void makeSound();
  
 }
 
-public interface moveable{
-    void move();
-}
 
 interface AnimalBehavior {
-    void move();
     void makeSound();
+    void move();
+    void eat();
 }
 
-class dog extends AnimalClass implements moveable, AnimalBehavior {
+class dog extends AnimalClass implements AnimalBehavior {
 
     public dog(String name) {
         super(name, "Dog");
@@ -34,11 +37,16 @@ class dog extends AnimalClass implements moveable, AnimalBehavior {
     }
     @Override
     public void makeSound() {
-        System.out.println(this.name + " : barks.");
+        System.out.println(this.name + " : WoOf!.");
+    }
+
+        @Override
+    public void eat() {
+        System.out.println(name + " : eats meat");
     }
 }
 
-class cat extends AnimalClass implements moveable {
+class cat extends AnimalClass implements AnimalBehavior {
 
     public cat(String name) {
         super(name, "Cat");
@@ -52,6 +60,11 @@ class cat extends AnimalClass implements moveable {
     @Override
     public void move() {
         System.out.println(this.name + " : walks gracefully.");
+    }
+
+        @Override
+    public void eat() {
+        System.out.println(name + " : eats meat");
     }
 
 }

@@ -10,12 +10,12 @@ public class animals {
 
         for (AnimalClass animal : animals) {
             animal.makeSound();
-            if (animal instanceof moveable) {
-                ((moveable) animal).move();
+            if (animal instanceof AnimalBehavior) {
+                ((AnimalBehavior) animal).move();
             }
         }
 
-        moveable m = new dog("Charlie");
+        AnimalBehavior m = new dog("Charlie");
         m.move();
         
         if(m instanceof dog){
@@ -31,6 +31,7 @@ public class animals {
         for (AnimalBehavior animal : a) {
             animal.makeSound();
             animal.move();
+            animal.eat();
         }
 
         System.out.println();
